@@ -1,0 +1,278 @@
+@media only screen  and (min-width:1400px) and (min-height:1200px) {
+
+    body {
+    }
+
+    .login-page-wrapper {
+        top: 120px;
+        right: 280px;
+        position: absolute;
+        background-color: whitesmoke;
+        background-image: url("./StyleImgs/icon.png");
+        background-size: 60px 80px;
+        background-repeat: no-repeat;
+        background-position: right top;
+        border: 5px solid ghostwhite;
+        border-radius: 25px;
+        width: 460px;
+        height: 250px;
+        margin: 2rem auto;
+        margin-top: -8px;
+        padding: 1rem;
+        z-index: auto;
+    }
+
+    .welcomeTitle {
+    }
+
+    .welcomeSubTitle {
+
+    }
+
+    #usernameLabel {
+        display: block;
+        font-size: 18px;
+        color: black;
+        font-family: 'Helvetica Neue', sans-serif;
+        line-height: 2;
+        text-shadow: rgb(0, 0, 0) 0px 1px 0px;
+        vertical-align: middle;
+        text-align: center;
+
+        line-height: 150%;
+
+    }
+
+    .username-input {
+        /*top: 50px;*/
+        width: 178px;
+        height: 20px;
+        /*top: 10px;*/
+    }
+
+    #submit-btn {
+        font-weight: bold;
+        box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset;
+        background: linear-gradient(rgb(237, 237, 237) 5%, rgb(223, 223, 223) 100%) rgb(237, 237, 237);
+        border-radius: 6px;
+        border: 1px solid rgb(220, 220, 220);
+        cursor: pointer;
+        position: absolute;
+        top: 202px;
+        color: rgb(119, 119, 119);
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        width: 280px;
+    }
+}
+
+@media only screen  and (min-width:1400px) and (max-height:1200px) {
+    body {
+    }
+
+    .login-page-wrapper {
+        top: 120px;
+        right: 280px;
+        position: absolute;
+        background-color: whitesmoke;
+        background-image: url("./StyleImgs/icon.png");
+        background-size: 60px 80px;
+        background-repeat: no-repeat;
+        background-position: right top;
+        border: 5px solid ghostwhite;
+        border-radius: 25px;
+        width: 460px;
+        height: 250px;
+        margin: 2rem auto;
+        margin-top: -8px;
+        padding: 1rem;
+        z-index: auto;
+    }
+
+    .welcomeTitle {
+    }
+
+    .welcomeSubTitle {
+
+    }
+
+    #usernameLabel {
+        display: block;
+        font-size: 18px;
+        color: black;
+        font-family: 'Helvetica Neue', sans-serif;
+        line-height: 2;
+        text-shadow: rgb(0, 0, 0) 0px 1px 0px;
+        vertical-align: middle;
+        text-align: center;
+
+        line-height: 150%;
+
+    }
+
+    .username-input {
+        /*top: 50px;*/
+        width: 178px;
+        height: 20px;
+        /*top: 10px;*/
+    }
+
+    #submit-btn {
+        font-weight: bold;
+        box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset;
+        background: linear-gradient(rgb(237, 237, 237) 5%, rgb(223, 223, 223) 100%) rgb(237, 237, 237);
+        border-radius: 6px;
+        border: 1px solid rgb(220, 220, 220);
+        cursor: pointer;
+        position: absolute;
+        top: 202px;
+        color: rgb(119, 119, 119);
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        width: 280px;
+    }
+
+}
+
+@media only screen  and (min-width:1200px) and (max-width:1400px) {
+
+    /*loginStyle*/
+    body {
+    }
+
+    .login-page-wrapper {
+        top: 120px;
+        right: 280px;
+        position: absolute;
+        background-color: whitesmoke;
+        background-image: url("./StyleImgs/icon.png");
+        background-size: 60px 80px;
+        background-repeat: no-repeat;
+        background-position: right top;
+        border: 5px solid ghostwhite;
+        border-radius: 25px;
+        width: 460px;
+        height: 250px;
+        margin: 2rem auto;
+        margin-top: -8px;
+        padding: 1rem;
+        z-index: auto;
+    }
+
+    .welcomeTitle {
+    }
+
+    .welcomeSubTitle {
+
+    }
+
+    #usernameLabel {
+        display: block;
+        font-size: 18px;
+        color: black;
+        font-family: 'Helvetica Neue', sans-serif;
+        line-height: 2;
+        text-shadow: rgb(0, 0, 0) 0px 1px 0px;
+        vertical-align: middle;
+        text-align: center;
+
+        line-height: 150%;
+
+    }
+
+    .username-input {
+        /*top: 50px;*/
+        width: 178px;
+        height: 20px;
+        /*top: 10px;*/
+    }
+
+    #submit-btn {
+        font-weight: bold;
+        box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset;
+        background: linear-gradient(rgb(237, 237, 237) 5%, rgb(223, 223, 223) 100%) rgb(237, 237, 237);
+        border-radius: 6px;
+        border: 1px solid rgb(220, 220, 220);
+        cursor: pointer;
+        position: absolute;
+        top: 202px;
+        color: rgb(119, 119, 119);
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        width: 280px;
+    }
+}
+
+@media only screen  and (min-width:800px) and (max-width:1200px)  {
+
+
+    /*loginStyle*/
+    body {
+    }
+
+    .login-page-wrapper {
+        top: 120px;
+        right: 280px;
+        position: absolute;
+        background-color: whitesmoke;
+        background-image: url("./StyleImgs/icon.png");
+        background-size: 60px 80px;
+        background-repeat: no-repeat;
+        background-position: right top;
+        border: 5px solid ghostwhite;
+        border-radius: 25px;
+        width: 460px;
+        height: 250px;
+        margin: 2rem auto;
+        margin-top: -8px;
+        padding: 1rem;
+        z-index: auto;
+    }
+
+    .welcomeTitle {
+    }
+
+    .welcomeSubTitle {
+
+    }
+
+    #usernameLabel {
+        display: block;
+        font-size: 18px;
+        color: black;
+        font-family: 'Helvetica Neue', sans-serif;
+        line-height: 2;
+        text-shadow: rgb(0, 0, 0) 0px 1px 0px;
+        vertical-align: middle;
+        text-align: center;
+
+        line-height: 150%;
+
+    }
+
+    .username-input {
+        /*top: 50px;*/
+        width: 178px;
+        height: 20px;
+        /*top: 10px;*/
+    }
+
+    #submit-btn {
+        font-weight: bold;
+        box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset;
+        background: linear-gradient(rgb(237, 237, 237) 5%, rgb(223, 223, 223) 100%) rgb(237, 237, 237);
+        border-radius: 6px;
+        border: 1px solid rgb(220, 220, 220);
+        cursor: pointer;
+        position: absolute;
+        top: 202px;
+        color: rgb(119, 119, 119);
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        width: 280px;
+    }
+}

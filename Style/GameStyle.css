@@ -1,0 +1,1330 @@
+@media only screen  and (min-width:1400px) and (min-height:1200px) {
+
+    .gameBoard-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .theGame {
+        position: absolute;
+        background-image: url("./StyleImgs/bg5.jpeg");
+        background-size: 1000px 600px;
+        background-repeat: no-repeat;
+        background-position: center top;
+
+        top: 15px;
+        left: 250px;
+        width: 1000px;
+        height: 600px;
+    }
+
+    #leaveBtn {
+        /*bottom: 100px;*/
+        position: absolute;
+        height: 50px;
+        width: 45px;
+        margin-left: -55px;
+        /*margin-top: -20px;*/
+        background-image: url("./StyleImgs/leave.jpeg");
+        /*background-size: 60px 80px;*/
+        background-color: transparent;
+        background-size: 40px 50px;
+        background-repeat: no-repeat;
+        background-position: center top;
+
+    }
+
+    .playerCard {
+        width: 80px;
+        height: 110px;
+        margin: -20px;
+    }
+
+    .myCard:hover {
+        transform: scale(1.2);
+    }
+
+    .playersContainer {
+        position: relative;
+    }
+
+    /*p {*/
+    /*position:absolute;*/
+    /*border:2px solid;*/
+    /*margin:0;*/
+    /*padding:5px;*/
+    /*}*/
+    /*.player1-container img { display: block; width: 100%; }*/
+    /*.deg0 { transform: translate(12em); } !* 12em = half the width of the wrapper *!*/
+    /*.deg45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }*/
+    /*.deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }*/
+    /*.deg180 { transform: translate(-12em); }*/
+    .player1-container {
+        display: flex;
+        position: absolute;
+        /*border:2px solid;*/
+        padding: 5px;
+
+        /*border-color:green;*/
+        top: 252px;
+        left: 155px;
+        width: 680px;
+
+        justify-content: center;
+    }
+
+    .player2-container {
+        display: flex;
+        justify-content: center;
+
+        right: 652px;
+        width: 500px;
+
+        position: absolute;
+        margin: 0;
+        padding: 5px;
+        transform: rotate(90deg);
+        top: 42px;
+    }
+
+    .player3-container {
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+        margin: 0;
+        padding: 5px;
+
+        left: 155px;
+        width: 680px;
+        bottom: 98px;
+    }
+
+    .player4-container {
+        display: flex;
+        justify-content: center;
+
+        transform: rotate(270deg);
+        left: 650px;
+        width: 500px;
+        top: 40px;
+        position: absolute;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .tablePackTop {
+        position: absolute;
+        left: 480px;
+        top: 220px;
+
+        width: 80px;
+        height: 110px;
+    }
+
+    /* ugli deck*/
+    /*#deck {*/
+    /*position: relative;*/
+    /*left: 300px;*/
+    /*top: 180px;*/
+    /*}*/
+    #deck {
+        position: relative;
+        transform: rotate(90deg);
+        width: 250px;
+        height: 220px;
+        left: 260px;
+        top: 180px;
+    }
+
+    /****************************************** user name styles *************************************/
+    .userName {
+        position: absolute;
+        left: 150px;
+        text-align: center;
+
+        background-color: rgba(248, 248, 248, 0.85);
+        /*background: linear-gradient(rgb(237, 237, 237) 5%, rgb(223, 223, 223) 100%) rgb(237, 237, 237);*/
+        width: 120px;
+        height: 18px;
+        margin: 40px auto;
+        box-shadow: darkgrey 0px 1px 0px 0px inset;
+        /*background-image: url("StyleImgs/bg3.png");*/
+        display: inline-block;
+        cursor: pointer;
+        font-family: "Courier New";
+        font-size: 24px;
+        font-weight: bold;
+        padding: 6px 24px;
+        text-decoration: none;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+    }
+
+    .player1-container .userName {
+        right: 110px;
+        top: 53px;
+    }
+
+    .player2-container .userName {
+        left: 150px;
+        top: 63px;
+    }
+
+    .player3-container .userName {
+        bottom: 56px;
+        right: 130px;
+    }
+
+    .player4-container .userName {
+        top: 64px;
+        left: 170px;
+    }
+
+    /****************************************** choose color styles *************************************/
+    #chooseColor-container {
+        position: absolute;
+        left: 400px;
+        top: 380px;
+        transform: scale(0.7);
+    }
+
+    .blueColorButton:hover {
+        transform: scale(1.1);
+    }
+
+    .greenColorButton:hover {
+        transform: scale(1.1);
+    }
+
+    .yellowColorButton:hover {
+        transform: scale(1.1);
+    }
+
+    .redColorButton:hover {
+        transform: scale(1.1);
+    }
+
+    .blueColorButton:active {
+
+        animation-name: spin;
+        animation-duration: 1s;
+    }
+
+    .greenColorButton:active {
+
+        animation-name: spin;
+        animation-duration: 1s;
+    }
+
+    .yellowColorButton:active {
+
+        animation-name: spin;
+        animation-duration: 1s;
+    }
+
+    .redColorButton:active {
+        animation-name: spin;
+        animation-duration: 1s;
+    }
+
+    @keyframes spin {
+        50% {
+            transform: rotateZ(180deg)
+        }
+        100% {
+            transform: rotateZ(180deg)
+        }
+    }
+
+    /****************************************** statistics styles *************************************/
+    #statistics-Container {
+        font-weight: bold;
+        box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset;
+        /*background: linear-gradient(rgb(237, 237, 237) 5%, rgb(223, 223, 223) 100%) rgb(237, 237, 237);*/
+        background-image: url("./StyleImgs/statistics.jpeg");
+        background-size: 60px 65px;
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-color: #f8f8f8;
+        border-radius: 25px;
+        border: 1px solid rgb(220, 220, 220);
+        display: inline-block;
+        cursor: pointer;
+        color: rgb(119, 119, 119);
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 6px 24px;
+        text-decoration: none;
+        /*width: auto;*/
+        text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    }
+
+    #statistics-Container {
+        width: 180px;
+        margin: 5px;
+        position: sticky;
+    }
+
+    #spectatorList-container {
+        font-weight: bold;
+        box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset;
+        /*background: linear-gradient(rgb(237, 237, 237) 5%, rgb(223, 223, 223) 100%) rgb(237, 237, 237);*/
+        /*background-image: url("./StyleImgs/spectator.png");*/
+        /*background-size: 80px 60px;*/
+        /*background-repeat: repeat-x;*/
+        /*background-position: top-right;*/
+        background-image: url("./StyleImgs/spectator.jpeg");
+        background-position: top right;
+        background-size: 80px 60px;
+        background-repeat: no-repeat;
+        background-color: #f8f8f8;
+        border-radius: 25px;
+        border: 1px solid rgb(220, 220, 220);
+        display: inline-block;
+        cursor: pointer;
+        color: rgb(119, 119, 119);
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 6px 24px;
+        text-decoration: none;
+        width: 180px;
+        margin-top: 5px;
+        text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    }
+
+    .spectator {
+        /*background-image: url("./StyleImgs/spectator.png");*/
+        /*background-size: 20px 20px;*/
+        /*background-repeat: no-repeat;*/
+        /*background-position: right;*/
+        margin: 10px;
+        width: auto;
+        /*justify-content: center;*/
+        text-align: left;
+    }
+
+    .popupContainer {
+        position: relative;
+        left: 450px;
+        width: 400px;
+        height: 400px;
+        text-align: center;
+        background: #cccc;
+        padding: 15px 30px;
+        border-radius: 10px 5px;
+        border: 2px solid black;
+    }
+
+    .popupContainer.endGame {
+        height: auto;
+        position: absolute;
+        bottom: 150px;
+        left: 550px;
+        background-color: #f8f8f8;
+    }
+}
+
+@media only screen  and (min-width:1340px) and (max-width:1400px) {
+
+    /*gameStyle*/
+
+    .gameBoard-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .theGame {
+        position: absolute;
+        background-image: url("./StyleImgs/bg5.jpeg");
+        background-size: 1000px 600px;
+        background-repeat: no-repeat;
+        background-position: center top;
+
+        top: 15px;
+        left: 250px;
+        width: 1000px;
+        height: 600px;
+    }
+
+    #leaveBtn {
+        /*bottom: 100px;*/
+        position: absolute;
+        height: 50px;
+        width: 45px;
+        margin-left: -55px;
+        /*margin-top: -20px;*/
+        background-image: url("./StyleImgs/leave.jpeg");
+        /*background-size: 60px 80px;*/
+        background-color: transparent;
+        background-size: 40px 50px;
+        background-repeat: no-repeat;
+        background-position: center top;
+
+    }
+
+    .playerCard {
+        width: 80px;
+        height: 110px;
+        margin: -20px;
+    }
+
+    .myCard:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+    .playersContainer {
+        position: relative;
+    }
+
+    /*p {*/
+    /*position:absolute;*/
+    /*border:2px solid;*/
+    /*margin:0;*/
+    /*padding:5px;*/
+    /*}*/
+    /*.player1-container img { display: block; width: 100%; }*/
+    /*.deg0 { transform: translate(12em); } !* 12em = half the width of the wrapper *!*/
+    /*.deg45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }*/
+    /*.deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }*/
+    /*.deg180 { transform: translate(-12em); }*/
+    .player1-container {
+        display: flex;
+        position: absolute;
+        /*border:2px solid;*/
+        padding: 5px;
+
+        /*border-color:green;*/
+        top: 252px;
+        left: 155px;
+        width: 680px;
+
+        justify-content: center;
+    }
+
+    .player2-container {
+        display: flex;
+        justify-content: center;
+
+        right: 652px;
+        width: 500px;
+
+        position: absolute;
+        margin: 0;
+        padding: 5px;
+        transform: rotate(90deg);
+        top: 42px;
+    }
+
+    .player3-container {
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+        margin: 0;
+        padding: 5px;
+
+        left: 155px;
+        width: 680px;
+        bottom: 98px;
+    }
+
+    .player4-container {
+        display: flex;
+        justify-content: center;
+
+        transform: rotate(270deg);
+        left: 650px;
+        width: 500px;
+        top: 40px;
+        position: absolute;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .tablePackTop {
+        position: absolute;
+        left: 480px;
+        top: 220px;
+
+        width: 80px;
+        height: 110px;
+    }
+
+    /* ugli deck*/
+    /*#deck {*/
+    /*position: relative;*/
+    /*left: 300px;*/
+    /*top: 180px;*/
+    /*}*/
+    #deck {
+        cursor: pointer;
+        position: relative;
+        transform: rotate(90deg);
+        width: 250px;
+        height: 220px;
+        left: 260px;
+        top: 180px;
+    }
+
+    /****************************************** user name styles *************************************/
+    .userName {
+        position: absolute;
+        left: 150px;
+        text-align: center;
+
+        background-color: rgba(248, 248, 248, 0.85);
+        /*background: linear-gradient(rgb(237, 237, 237) 5%, rgb(223, 223, 223) 100%) rgb(237, 237, 237);*/
+        width: 120px;
+        height: 18px;
+        margin: 40px auto;
+        box-shadow: darkgrey 0px 1px 0px 0px inset;
+        /*background-image: url("StyleImgs/bg3.png");*/
+        display: inline-block;
+        cursor: pointer;
+        font-family: "Courier New";
+        font-size: 24px;
+        font-weight: bold;
+        padding: 6px 24px;
+        text-decoration: none;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+    }
+
+    .player1-container .userName {
+        right: 110px;
+        top: 53px;
+    }
+
+    .player2-container .userName {
+        left: 150px;
+        top: 63px;
+    }
+
+    .player3-container .userName {
+        bottom: 56px;
+        right: 130px;
+    }
+
+    .player4-container .userName {
+        top: 64px;
+        left: 170px;
+    }
+
+    /****************************************** choose color styles *************************************/
+    #chooseColor-container {
+        position: absolute;
+        left: 400px;
+        top: 380px;
+        transform: scale(0.7);
+    }
+
+    .blueColorButton:hover {
+        transform: scale(1.1);
+    }
+
+    .greenColorButton:hover {
+        transform: scale(1.1);
+    }
+
+    .yellowColorButton:hover {
+        transform: scale(1.1);
+    }
+
+    .redColorButton:hover {
+        transform: scale(1.1);
+    }
+
+    .blueColorButton:active {
+
+        animation-name: spin;
+        animation-duration: 1s;
+    }
+
+    .greenColorButton:active {
+
+        animation-name: spin;
+        animation-duration: 1s;
+    }
+
+    .yellowColorButton:active {
+
+        animation-name: spin;
+        animation-duration: 1s;
+    }
+
+    .redColorButton:active {
+        animation-name: spin;
+        animation-duration: 1s;
+    }
+
+    @keyframes spin {
+        50% {
+            transform: rotateZ(180deg)
+        }
+        100% {
+            transform: rotateZ(180deg)
+        }
+    }
+
+    /****************************************** statistics styles *************************************/
+    #statistics-Container {
+        font-weight: bold;
+        box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset;
+        /*background: linear-gradient(rgb(237, 237, 237) 5%, rgb(223, 223, 223) 100%) rgb(237, 237, 237);*/
+        background-image: url("./StyleImgs/statistics.jpeg");
+        background-size: 60px 65px;
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-color: #f8f8f8;
+        border-radius: 25px;
+        border: 1px solid rgb(220, 220, 220);
+        display: inline-block;
+        cursor: pointer;
+        color: rgb(119, 119, 119);
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 6px 24px;
+        text-decoration: none;
+        /*width: auto;*/
+        text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    }
+
+    #statistics-Container {
+        width: 180px;
+        margin: 5px;
+        position: sticky;
+    }
+
+    #spectatorList-container {
+        font-weight: bold;
+        box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset;
+        /*background: linear-gradient(rgb(237, 237, 237) 5%, rgb(223, 223, 223) 100%) rgb(237, 237, 237);*/
+        /*background-image: url("./StyleImgs/spectator.png");*/
+        /*background-size: 80px 60px;*/
+        /*background-repeat: repeat-x;*/
+        /*background-position: top-right;*/
+        background-image: url("./StyleImgs/spectator.jpeg");
+        background-position: top right;
+        background-size: 80px 60px;
+        background-repeat: no-repeat;
+        background-color: #f8f8f8;
+        border-radius: 25px;
+        border: 1px solid rgb(220, 220, 220);
+        display: inline-block;
+        cursor: pointer;
+        color: rgb(119, 119, 119);
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 6px 24px;
+        text-decoration: none;
+        width: 180px;
+        margin-top: 5px;
+        text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    }
+
+    .spectator {
+        /*background-image: url("./StyleImgs/spectator.png");*/
+        /*background-size: 20px 20px;*/
+        /*background-repeat: no-repeat;*/
+        /*background-position: right;*/
+        margin: 10px;
+        width: auto;
+        /*justify-content: center;*/
+        text-align: left;
+    }
+
+    .popupContainer {
+        position: relative;
+        left: 450px;
+        width: 400px;
+        height: 400px;
+        text-align: center;
+        background: #cccc;
+        padding: 15px 30px;
+        border-radius: 10px 5px;
+        border: 2px solid black;
+    }
+
+    .popupContainer.endGame {
+        height: auto;
+        position: absolute;
+        bottom: 150px;
+        left: 550px;
+        background-color: #f8f8f8;
+
+    }
+}
+
+@media only screen  and (min-width:1067px) and (max-width:1340px)  {
+    /*gameStyle*/
+
+    .gameBoard-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .theGame {
+        position: absolute;
+        background-image: url("./StyleImgs/bg5.jpeg");
+        background-size: 800px 400px;
+        background-repeat: no-repeat;
+        background-position: center top;
+
+        top: 15px;
+        left: 150px;
+        width: 1000px;
+        height: 600px;
+    }
+
+    #leaveBtn {
+        /*bottom: 100px;*/
+        position: absolute;
+        height: 50px;
+        width: 45px;
+        margin-left: -55px;
+        /*margin-top: -20px;*/
+        background-image: url("./StyleImgs/leave.jpeg");
+        /*background-size: 60px 80px;*/
+        background-color: transparent;
+        background-size: 40px 50px;
+        background-repeat: no-repeat;
+        background-position: center top;
+
+    }
+
+    .playerCard {
+        width: 60px;
+        height: 90px;
+        margin: -20px;
+    }
+
+    .myCard:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+    .playersContainer {
+        position: relative;
+    }
+
+    /*p {*/
+    /*position:absolute;*/
+    /*border:2px solid;*/
+    /*margin:0;*/
+    /*padding:5px;*/
+    /*}*/
+    /*.player1-container img { display: block; width: 100%; }*/
+    /*.deg0 { transform: translate(12em); } !* 12em = half the width of the wrapper *!*/
+    /*.deg45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }*/
+    /*.deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }*/
+    /*.deg180 { transform: translate(-12em); }*/
+    .player1-container {
+        display: flex;
+        position: absolute;
+        /*border:2px solid;*/
+        padding: 5px;
+
+        /*border-color:green;*/
+        top: 120px;
+        left: 200px;
+        width: 480px;
+
+        justify-content: center;
+    }
+
+    .player2-container {
+        display: flex;
+        justify-content: center;
+
+        right: 652px;
+        width: 300px;
+
+        position: absolute;
+        margin: 0;
+        padding: 5px;
+        transform: rotate(90deg);
+        top: -10px;
+    }
+
+    .player3-container {
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+        margin: 0;
+        padding: 5px;
+
+        left: 205px;
+        width: 480px;
+        bottom: 80px;
+    }
+
+    .player4-container {
+        display: flex;
+        justify-content: center;
+
+        transform: rotate(270deg);
+        left: 650px;
+        width: 300px;
+        top: -5px;
+        position: absolute;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .tablePackTop {
+        position: absolute;
+        left: 500px;
+        top: 160px;
+
+        width: 60px;
+        height: 90px;
+    }
+
+    /* ugli deck*/
+    /*#deck {*/
+    /*position: relative;*/
+    /*left: 300px;*/
+    /*top: 180px;*/
+    /*}*/
+    #deck {
+        cursor: pointer;
+        position: relative;
+        transform: rotate(90deg);
+        width: 200px;
+        height: 180px;
+        left: 290px;
+        top: 120px;
+    }
+
+    /****************************************** user name styles *************************************/
+    .userName {
+        position: absolute;
+        left: 150px;
+        text-align: center;
+
+        background-color: rgba(248, 248, 248, 0.85);
+        /*background: linear-gradient(rgb(237, 237, 237) 5%, rgb(223, 223, 223) 100%) rgb(237, 237, 237);*/
+        width: 80px;
+        height: 14px;
+        margin: 40px auto;
+        box-shadow: darkgrey 0px 1px 0px 0px inset;
+        /*background-image: url("StyleImgs/bg3.png");*/
+        display: inline-block;
+        cursor: pointer;
+        font-family: "Courier New";
+        font-size: 18px;
+        font-weight: bold;
+        padding: 6px 24px;
+        text-decoration: none;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+    }
+
+    .player1-container .userName {
+        right: 110px;
+        top: 33px;
+    }
+
+    .player2-container .userName {
+        left: 80px;
+        top: 63px;
+    }
+
+    .player3-container .userName {
+        bottom: 42px;
+        right: 130px;
+    }
+
+    .player4-container .userName {
+        top: 64px;
+        left: 120px;
+    }
+
+    /****************************************** choose color styles *************************************/
+    #chooseColor-container {
+        position: absolute;
+        left: 400px;
+        top: 380px;
+        transform: scale(0.5);
+    }
+
+    .blueColorButton:hover {
+        transform: scale(0.7);
+    }
+
+    .greenColorButton:hover {
+        transform: scale(0.7);
+    }
+
+    .yellowColorButton:hover {
+        transform: scale(0.7);
+    }
+
+    .redColorButton:hover {
+        transform: scale(0.7);
+    }
+
+    .blueColorButton:active {
+
+        animation-name: spin;
+        animation-duration: 1s;
+    }
+
+    .greenColorButton:active {
+
+        animation-name: spin;
+        animation-duration: 1s;
+    }
+
+    .yellowColorButton:active {
+
+        animation-name: spin;
+        animation-duration: 1s;
+    }
+
+    .redColorButton:active {
+        animation-name: spin;
+        animation-duration: 1s;
+    }
+
+    @keyframes spin {
+        50% {
+            transform: rotateZ(180deg)
+        }
+        100% {
+            transform: rotateZ(180deg)
+        }
+    }
+
+    /****************************************** statistics styles *************************************/
+    #statistics-Container {
+        font-weight: bold;
+        box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset;
+        /*background: linear-gradient(rgb(237, 237, 237) 5%, rgb(223, 223, 223) 100%) rgb(237, 237, 237);*/
+        background-image: url("./StyleImgs/statistics.jpeg");
+        background-size: 40px 45px;
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-color: #f8f8f8;
+        border-radius: 25px;
+        border: 1px solid rgb(220, 220, 220);
+        display: inline-block;
+        cursor: pointer;
+        color: rgb(119, 119, 119);
+        font-family: Arial;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 6px 24px;
+        text-decoration: none;
+        /*width: auto;*/
+        text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    }
+
+    #statistics-Container {
+        width: 120px;
+        margin: 5px;
+        position: sticky;
+    }
+
+    #spectatorList-container {
+        font-weight: bold;
+        box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset;
+        /*background: linear-gradient(rgb(237, 237, 237) 5%, rgb(223, 223, 223) 100%) rgb(237, 237, 237);*/
+        /*background-image: url("./StyleImgs/spectator.png");*/
+        /*background-size: 80px 60px;*/
+        /*background-repeat: repeat-x;*/
+        /*background-position: top-right;*/
+        background-image: url("./StyleImgs/spectator.jpeg");
+        background-position: top right;
+        background-size: 60px 40px;
+        background-repeat: no-repeat;
+        background-color: #f8f8f8;
+        border-radius: 25px;
+        border: 1px solid rgb(220, 220, 220);
+        display: inline-block;
+        cursor: pointer;
+        color: rgb(119, 119, 119);
+        font-family: Arial;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 6px 24px;
+        text-decoration: none;
+        width: 120px;
+        margin-top: 5px;
+        text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    }
+
+    .spectator {
+        /*background-image: url("./StyleImgs/spectator.png");*/
+        /*background-size: 20px 20px;*/
+        /*background-repeat: no-repeat;*/
+        /*background-position: right;*/
+        margin: 10px;
+        width: auto;
+        /*justify-content: center;*/
+        text-align: left;
+    }
+
+    .popupContainer {
+        position: relative;
+        left: 450px;
+        width: 400px;
+        height: 400px;
+        text-align: center;
+        background: #cccc;
+        padding: 15px 30px;
+        border-radius: 10px 5px;
+        border: 2px solid black;
+    }
+
+    .popupContainer.endGame {
+        height: auto;
+        position: absolute;
+        bottom: 150px;
+        left: 550px;
+        background-color: #f8f8f8;
+
+    }
+}
+
+@media only screen  and (max-width:1067px) {
+    /*gameStyle*/
+    .gameBoard-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .theGame {
+        position: absolute;
+        background-image: url("./StyleImgs/bg5.jpeg");
+        background-size: 500px 300px;
+        background-repeat: no-repeat;
+        background-position: center top;
+
+        top: 25px;
+        left: 40px;
+        width: 1000px;
+        height: 600px;
+
+    }
+
+    #leaveBtn {
+        /*bottom: 100px;*/
+        position: absolute;
+        height: 50px;
+        width: 45px;
+        margin-left: -55px;
+        /*margin-top: -20px;*/
+        background-image: url("./StyleImgs/leave.jpeg");
+        /*background-size: 60px 80px;*/
+        background-color: transparent;
+        background-size: 40px 50px;
+        background-repeat: no-repeat;
+        background-position: center top;
+
+    }
+
+    .playerCard {
+        width: 50px;
+        height: 70px;
+        margin: -4px;
+
+    }
+
+    .myCard:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+    .playersContainer {
+        position: relative;
+        transform: scale(0.7);
+        top: 45px;
+
+    }
+
+    /*p {*/
+    /*position:absolute;*/
+    /*border:2px solid;*/
+    /*margin:0;*/
+    /*padding:5px;*/
+    /*}*/
+    /*.player1-container img { display: block; width: 100%; }*/
+    /*.deg0 { transform: translate(12em); } !* 12em = half the width of the wrapper *!*/
+    /*.deg45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }*/
+    /*.deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }*/
+    /*.deg180 { transform: translate(-12em); }*/
+    .player1-container {
+        display: flex;
+        position: absolute;
+        /*border:2px solid;*/
+        padding: 5px;
+
+        /*border-color:green;*/
+        top: 140px;
+        left: 200px;
+        width: 480px;
+
+        justify-content: center;
+    }
+
+    .player2-container {
+        display: flex;
+        justify-content: center;
+
+        right: 652px;
+        width: 300px;
+
+        position: absolute;
+        margin: 0;
+        padding: 5px;
+        transform: rotate(90deg);
+        top: -10px;
+    }
+
+    .player3-container {
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+        margin: 0;
+        padding: 5px;
+
+        left: 205px;
+        width: 480px;
+        bottom: 100px;
+    }
+
+    .player4-container {
+        display: flex;
+        justify-content: center;
+
+        transform: rotate(270deg);
+        left: 650px;
+        width: 300px;
+        top: -5px;
+        position: absolute;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .tablePackTop {
+        position: absolute;
+        left: 500px;
+        top: 120px;
+
+        width: 50px;
+        height: 70px;
+        transform: scale(0.7);
+    }
+
+    #deck {
+        cursor: pointer;
+        position: relative;
+        transform: rotate(90deg);
+        width: 120px;
+        height: 90px;
+        left: 350px;
+        top: 120px;
+    }
+
+    /****************************************** user name styles *************************************/
+    .userName {
+        position: absolute;
+        left: 150px;
+        text-align: center;
+
+        background-color: rgba(248, 248, 248, 0.85);
+        /*background: linear-gradient(rgb(237, 237, 237) 5%, rgb(223, 223, 223) 100%) rgb(237, 237, 237);*/
+        width: 80px;
+        height: 14px;
+        margin: 40px auto;
+        box-shadow: darkgrey 0px 1px 0px 0px inset;
+        /*background-image: url("StyleImgs/bg3.png");*/
+        display: inline-block;
+        cursor: pointer;
+        font-family: "Courier New";
+        font-size: 18px;
+        font-weight: bold;
+        padding: 6px 24px;
+        text-decoration: none;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+    }
+
+    .player1-container .userName {
+        right: 110px;
+        top: 35px;
+    }
+
+    .player2-container .userName {
+        left: 80px;
+        top: 63px;
+    }
+
+    .player3-container .userName {
+        bottom: 62px;
+        right: 160px;
+    }
+
+    .player4-container .userName {
+        top: 64px;
+        left: 120px;
+    }
+
+    /****************************************** choose color styles *************************************/
+    #chooseColor-container {
+        position: absolute;
+        left: 400px;
+        top: 380px;
+        transform: scale(0.5);
+    }
+
+    .blueColorButton:hover {
+        transform: scale(0.7);
+    }
+
+    .greenColorButton:hover {
+        transform: scale(0.7);
+    }
+
+    .yellowColorButton:hover {
+        transform: scale(0.7);
+    }
+
+    .redColorButton:hover {
+        transform: scale(0.7);
+    }
+
+    .blueColorButton:active {
+
+        animation-name: spin;
+        animation-duration: 1s;
+    }
+
+    .greenColorButton:active {
+
+        animation-name: spin;
+        animation-duration: 1s;
+    }
+
+    .yellowColorButton:active {
+
+        animation-name: spin;
+        animation-duration: 1s;
+    }
+
+    .redColorButton:active {
+        animation-name: spin;
+        animation-duration: 1s;
+    }
+
+    @keyframes spin {
+        50% {
+            transform: rotateZ(180deg)
+        }
+        100% {
+            transform: rotateZ(180deg)
+        }
+    }
+
+    /****************************************** statistics styles *************************************/
+    #statistics-Container {
+        font-weight: bold;
+        box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset;
+        /*background: linear-gradient(rgb(237, 237, 237) 5%, rgb(223, 223, 223) 100%) rgb(237, 237, 237);*/
+        background-image: url("./StyleImgs/statistics.jpeg");
+        background-size: 40px 45px;
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-color: #f8f8f8;
+        border-radius: 25px;
+        border: 1px solid rgb(220, 220, 220);
+        display: inline-block;
+        cursor: pointer;
+        color: rgb(119, 119, 119);
+        font-family: Arial;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 6px 24px;
+        text-decoration: none;
+        /*width: auto;*/
+        text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    }
+
+    #statistics-Container {
+        width: 120px;
+        margin: 5px;
+        position: sticky;
+    }
+
+    #spectatorList-container {
+        font-weight: bold;
+        box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset;
+        /*background: linear-gradient(rgb(237, 237, 237) 5%, rgb(223, 223, 223) 100%) rgb(237, 237, 237);*/
+        /*background-image: url("./StyleImgs/spectator.png");*/
+        /*background-size: 80px 60px;*/
+        /*background-repeat: repeat-x;*/
+        /*background-position: top-right;*/
+        background-image: url("./StyleImgs/spectator.jpeg");
+        background-position: top right;
+        background-size: 60px 40px;
+        background-repeat: no-repeat;
+        background-color: #f8f8f8;
+        border-radius: 25px;
+        border: 1px solid rgb(220, 220, 220);
+        display: inline-block;
+        cursor: pointer;
+        color: rgb(119, 119, 119);
+        font-family: Arial;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 6px 24px;
+        text-decoration: none;
+        width: 120px;
+        margin-top: 5px;
+        text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    }
+
+    .spectator {
+        /*background-image: url("./StyleImgs/spectator.png");*/
+        /*background-size: 20px 20px;*/
+        /*background-repeat: no-repeat;*/
+        /*background-position: right;*/
+        margin: 10px;
+        width: auto;
+        /*justify-content: center;*/
+        text-align: left;
+    }
+
+    .popupContainer {
+        position: relative;
+        left: 450px;
+        width: 400px;
+        height: 400px;
+        text-align: center;
+        background: #cccc;
+        padding: 15px 30px;
+        border-radius: 10px 5px;
+        border: 2px solid black;
+    }
+
+    .popupContainer.endGame {
+        height: auto;
+        position: absolute;
+        bottom: 150px;
+        left: 550px;
+        background-color: #f8f8f8;
+    }
+}
